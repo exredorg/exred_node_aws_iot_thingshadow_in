@@ -16,7 +16,7 @@ defmodule Exred.Node.AwsIotThingShadowIn do
   - /delete/rejected
   """
 
-  @name "AWS Thing Shadow"
+  @name "AWS Thing Shadow In"
   @category "input"
   @info @moduledoc
   @aws_input_topics [
