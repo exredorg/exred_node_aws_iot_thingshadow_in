@@ -31,7 +31,7 @@ defmodule Exred.Node.AwsIotThingShadowIn do
   ]
   @config %{
     thing_name: %{type: "string", value: "myThing"},
-    topics: %{type: "list-multiselect", value: @aws_input_topics, attrs: %{items: @aws_input_topics}},
+    topics: %{type: "list-multiselect", value: [], attrs: %{items: @aws_input_topics}},
     name: %{value: @name, type: "string", attrs: %{max: 20}}
   }
   @ui_attributes %{fire_button: false, left_icon: "send" }
