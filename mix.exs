@@ -21,7 +21,19 @@ defmodule Exred.Node.AwsIotThingShadowIn.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:exred_library, git: "git@bitbucket.org:zsolt001/exred_library.git"}
+      {:exred_library, "~> 0.1.11"},
     ]
+  end
+  
+  defp package do
+    %{
+      licenses: ["MIT"],
+      maintainers: ["Zsolt Keszthelyi"],
+      links: %{
+        "GitHub" => "https://github.com/exredorg/exred_node_aws_iot_thingshadow_in",
+        "Exred" => "http://exred.org"
+      },
+      files: ["lib", "mix.exs", "README.md", "LICENSE"]
+    }
   end
 end
